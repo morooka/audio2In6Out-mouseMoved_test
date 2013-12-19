@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 //#include "ofxKinect.h"
-#include "ofxOpenCv.h"
+
 
 class ofApp : public ofBaseApp{
 	public:
@@ -52,15 +52,7 @@ class ofApp : public ofBaseApp{
     
     
   //  ofxKinect kinect;
-    
-    ofxCvColorImage colorImg;
-	
-	ofxCvGrayscaleImage grayImage; // grayscale depth image
-	ofxCvGrayscaleImage grayThreshNear; // the near thresholded image
-	ofxCvGrayscaleImage grayThreshFar; // the far thresholded image
-	
-	ofxCvContourFinder contourFinder;
-	
+   	
 	bool bThreshWithOpenCV;
 	bool bDrawPointCloud;
 	
